@@ -76,6 +76,8 @@ namespace K12.DeleteStudentTeacher.Form
 
                         // 儲存 log
                         DAO.DataManager.SaveStudentLogData();
+
+                        K12.Presentation.NLDPanels.Student.RefillListPane();                        
                     }
                     else
                         return;

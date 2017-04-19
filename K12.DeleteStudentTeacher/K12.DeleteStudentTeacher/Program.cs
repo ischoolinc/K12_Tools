@@ -32,9 +32,9 @@ namespace K12.DeleteStudentTeacher
             };
 
             K12.Presentation.NLDPanels.Student.ListPaneContexMenu[studentName].Click += delegate
-            {
+            {                
                 Form.PasswordForm studForm = new Form.PasswordForm(Form.PasswordForm.DataType.Student, K12.Presentation.NLDPanels.Student.SelectedSource);
-                studForm.Show();                             
+                studForm.Show();                
             };
 
             // 清除學生照片
