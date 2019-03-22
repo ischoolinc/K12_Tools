@@ -34,8 +34,9 @@ namespace K12.EduAdminDataMapping.DAO
             {
                 try
                 {
+                    // [ischoolkingdom] Vicky新增，[09-02][04] 家長國籍管理，更新國籍對照nation_mapping_new_
                     Workbook wb = new Workbook();
-                    wb.Open(new MemoryStream(Properties.Resources.nation_mapping));
+                    wb.Open(new MemoryStream(Properties.Resources.nation_mapping_new_));
                     List<UDT_NationalityMapping> insertDataList = new List<UDT_NationalityMapping>();
                     for (int row = 1; row <= wb.Worksheets[0].Cells.MaxDataRow; row++)
                     {

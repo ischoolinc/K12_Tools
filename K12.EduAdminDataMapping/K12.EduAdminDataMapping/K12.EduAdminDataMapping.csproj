@@ -121,7 +121,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Resource\nation_mapping.xls" />
+    <None Include="Resources\nation_mapping%28new%29.xls" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

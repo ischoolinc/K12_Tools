@@ -42,13 +42,14 @@ namespace K12.EduAdminDataMapping.Form
                 dgData.Rows[rowIdx].Cells[colEngName.Index].Value = data.Eng_Name;
             }
 
+            // [ischoolkingdom] Vicky新增，[09-02][04] 家長國籍管理，更新國籍對照nation_mapping_new_
             // 當沒有資料載入預設
             if (_NationalityMappingList.Count == 0)
             {
                 try
                 {
                     Workbook wb = new Workbook();
-                    wb.Open(new MemoryStream(Properties.Resources.nation_mapping));
+                    wb.Open(new MemoryStream(Properties.Resources.nation_mapping_new_));
                     dgData.Rows.Clear();
                     for (int row = 1; row <= wb.Worksheets[0].Cells.MaxDataRow; row++)
                     {
