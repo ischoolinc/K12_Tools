@@ -38,6 +38,9 @@
             this.txtSchoolYear = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtSemester = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtGradeYear = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.chkClass = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.SuspendLayout();
             // 
             // labelX1
@@ -88,9 +91,10 @@
             // btnRun
             // 
             this.btnRun.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnRun.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRun.BackColor = System.Drawing.Color.Transparent;
             this.btnRun.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnRun.Location = new System.Drawing.Point(125, 62);
+            this.btnRun.Location = new System.Drawing.Point(125, 77);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(62, 23);
             this.btnRun.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -101,9 +105,10 @@
             // btnExit
             // 
             this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnExit.Location = new System.Drawing.Point(272, 62);
+            this.btnExit.Location = new System.Drawing.Point(272, 77);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(62, 23);
             this.btnExit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -114,9 +119,10 @@
             // btnDel
             // 
             this.btnDel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnDel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnDel.BackColor = System.Drawing.Color.Transparent;
             this.btnDel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnDel.Location = new System.Drawing.Point(199, 62);
+            this.btnDel.Location = new System.Drawing.Point(199, 77);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(62, 23);
             this.btnDel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -126,6 +132,7 @@
             // 
             // labelX4
             // 
+            this.labelX4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
@@ -133,11 +140,11 @@
             this.labelX4.BackgroundStyle.Class = "";
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.ForeColor = System.Drawing.Color.Red;
-            this.labelX4.Location = new System.Drawing.Point(12, 96);
+            this.labelX4.Location = new System.Drawing.Point(6, 106);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(325, 70);
+            this.labelX4.Size = new System.Drawing.Size(328, 43);
             this.labelX4.TabIndex = 9;
-            this.labelX4.Text = "產生：學年度、學期、年級是必填欄位，依照學年度、學期比對後新增資料或覆蓋年級。刪除：學年度、學期是必填欄位，年級非必填，依照學年度、學期比對後刪除資料。";
+            this.labelX4.Text = "產生：學年度、學期、年級是必填欄位，依照學年度、學期比對後新增資料或覆蓋年級。";
             this.labelX4.WordWrap = true;
             // 
             // txtSchoolYear
@@ -176,9 +183,61 @@
             this.txtGradeYear.Size = new System.Drawing.Size(55, 25);
             this.txtGradeYear.TabIndex = 12;
             // 
+            // chkClass
+            // 
+            this.chkClass.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.chkClass.BackgroundStyle.Class = "";
+            this.chkClass.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.chkClass.Location = new System.Drawing.Point(21, 44);
+            this.chkClass.Name = "chkClass";
+            this.chkClass.Size = new System.Drawing.Size(313, 23);
+            this.chkClass.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.chkClass.TabIndex = 13;
+            this.chkClass.Text = "帶入學生當前班級資訊";
+            // 
+            // labelX5
+            // 
+            this.labelX5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelX5.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.Class = "";
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.ForeColor = System.Drawing.Color.Red;
+            this.labelX5.Location = new System.Drawing.Point(6, 155);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(328, 41);
+            this.labelX5.TabIndex = 14;
+            this.labelX5.Text = "刪除：學年度、學期是必填欄位，年級非必填，依照學年度、學期比對後刪除資料。";
+            this.labelX5.WordWrap = true;
+            // 
+            // labelX6
+            // 
+            this.labelX6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelX6.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX6.BackgroundStyle.Class = "";
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.ForeColor = System.Drawing.Color.Red;
+            this.labelX6.Location = new System.Drawing.Point(6, 202);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(328, 41);
+            this.labelX6.TabIndex = 15;
+            this.labelX6.Text = "以當前學生班級資訊設定寫入資訊，如需變更，請至資料項目修改。";
+            this.labelX6.WordWrap = true;
+            // 
             // BatchStudSemesterHistoryForm
             // 
-            this.ClientSize = new System.Drawing.Size(343, 175);
+            this.ClientSize = new System.Drawing.Size(343, 257);
+            this.Controls.Add(this.labelX6);
+            this.Controls.Add(this.labelX5);
+            this.Controls.Add(this.chkClass);
             this.Controls.Add(this.txtGradeYear);
             this.Controls.Add(this.txtSemester);
             this.Controls.Add(this.txtSchoolYear);
@@ -189,6 +248,7 @@
             this.Controls.Add(this.labelX3);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
+            this.DoubleBuffered = true;
             this.Name = "BatchStudSemesterHistoryForm";
             this.Text = "產生學期對照(歷程)";
             this.Load += new System.EventHandler(this.BatchStudSemesterHistoryForm_Load);
@@ -208,5 +268,8 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txtSchoolYear;
         private DevComponents.DotNetBar.Controls.TextBoxX txtSemester;
         private DevComponents.DotNetBar.Controls.TextBoxX txtGradeYear;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chkClass;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.LabelX labelX6;
     }
 }
